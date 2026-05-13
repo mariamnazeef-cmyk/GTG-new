@@ -627,6 +627,180 @@ img {
   line-height: 1.38;
 }
 
+.stats-dashboard-inner,
+.stats-action-inner {
+  width: min(1080px, calc(100% - 48px));
+  margin: 0 auto;
+}
+
+.stats-spotlight {
+  min-height: 300px;
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid rgba(107, 49, 40, 0.12);
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: 0 20px 48px rgba(107, 49, 40, 0.14);
+}
+
+.stats-spotlight span {
+  color: var(--header-pink);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.stats-spotlight strong {
+  margin: 16px 0 8px;
+  color: var(--mission-text);
+  font-size: clamp(3.4rem, 7vw, 5.6rem);
+  line-height: 0.92;
+}
+
+.stats-spotlight p {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.stats-dashboard {
+  background:
+    linear-gradient(118deg, #f5eeee 0%, #fff8f7 58%, #e8f2ef 100%);
+}
+
+.stats-dashboard-inner {
+  padding: 70px 0;
+}
+
+.stats-only-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-flow: dense;
+  gap: 18px;
+}
+
+.stats-board-main,
+.stat-feature-card {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #efd8d7;
+  border-radius: 8px;
+  background: #fff8f7;
+  box-shadow: 0 12px 28px rgba(107, 49, 40, 0.08);
+}
+
+.stats-board-main {
+  min-height: 430px;
+  grid-column: span 3;
+  grid-row: span 2;
+  background: var(--mission-text);
+  color: #fff;
+}
+
+.stats-spotlight {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.stat-feature-card {
+  min-height: 176px;
+  padding: 22px;
+}
+
+.compact-stat {
+  grid-column: span 2;
+}
+
+.tall-stat {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.wide-small-stat {
+  grid-column: span 3;
+}
+
+.pink-stat {
+  background: #f6d7df;
+}
+
+.green-stat {
+  background: #e8f2ef;
+}
+
+.stat-tag {
+  display: block;
+  margin-bottom: 12px;
+  color: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.78;
+}
+
+.stats-board-main strong,
+.stat-feature-card strong {
+  display: block;
+  font-size: clamp(2.25rem, 4.2vw, 4rem);
+  line-height: 0.95;
+}
+
+.stats-board-main strong {
+  font-size: clamp(4.6rem, 10vw, 8.8rem);
+}
+
+.stats-board-main p,
+.stat-feature-card p {
+  max-width: 260px;
+  margin: 20px 0 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.stats-board-main p {
+  max-width: 420px;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 23px;
+}
+
+.stats-action {
+  background: var(--mission-text);
+  color: #fff;
+}
+
+.stats-action-inner {
+  padding: 60px 0;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 24px;
+}
+
+.stats-action h2 {
+  margin: 0;
+  font-size: clamp(1.8rem, 3.2vw, 2.7rem);
+  line-height: 1.1;
+}
+
+.stats-action p {
+  max-width: 640px;
+  margin: 10px 0 0;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.stats-action .donate-button {
+  border-color: #fff;
+  background: #fff;
+  color: var(--mission-text);
+}
+
 .stat-grid strong {
   display: block;
   margin-bottom: 8px;
@@ -1092,9 +1266,11 @@ img {
   .pilot-path,
   .social-hero-inner,
   .team-hero-inner,
+  .stats-only-grid,
   .channel-grid,
   .team-role-grid,
   .share-strip-inner,
+  .stats-action-inner,
   .team-invite-inner {
     grid-template-columns: 1fr;
   }
@@ -1112,8 +1288,22 @@ img {
   }
 
   .share-strip-inner,
+  .stats-action-inner,
   .team-invite-inner {
     align-items: start;
+  }
+
+  .stats-only-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats-board-main,
+  .stats-spotlight,
+  .compact-stat,
+  .tall-stat,
+  .wide-small-stat {
+    grid-column: auto;
+    grid-row: auto;
   }
 
 }
@@ -1128,6 +1318,8 @@ img {
   .signal-inner,
   .team-hero-inner,
   .team-roles-inner,
+  .stats-dashboard-inner,
+  .stats-action-inner,
   .share-strip-inner,
   .team-invite-inner {
     width: min(100% - 32px, 1000px);
@@ -1185,6 +1377,8 @@ img {
   .team-hero-inner,
   .signal-inner,
   .team-roles-inner,
+  .stats-dashboard-inner,
+  .stats-action-inner,
   .share-strip-inner,
   .team-invite-inner {
     padding: 44px 0;
@@ -1205,8 +1399,15 @@ img {
   }
 
   .channel-card,
-  .team-role-card {
+  .team-role-card,
+  .stat-feature-card,
+  .stats-board-main {
     min-height: 0;
+  }
+
+  .stats-spotlight {
+    min-height: 240px;
+    padding: 26px;
   }
 
   .team-stats {
