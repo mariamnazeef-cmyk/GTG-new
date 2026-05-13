@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | GiveToGirls</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=search">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="site-title" href="index.html">
+        <img src="gfg-footer-logo.png" alt="GiveToGirls logo">
+        <span>Give To Girls</span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="follow-us.html">Follow us</a>
+        <a href="our-team.html">Our Team</a>
+        <a href="statistics.html">Statistics</a>
+        <a href="pilot-program.html">Pilot Program</a>
+        <a href="contact-us.html">Join Our Mission</a>
+        <a href="events.html">Events</a>
+      </nav>
+      <form class="search-form" action="search.html" method="get" role="search">
+        <input class="search-input" type="search" name="q" placeholder="Search" aria-label="Search site">
+        <button class="search-button" type="submit" aria-label="Search">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="10.5" cy="10.5" r="6.5"></circle>
+            <path d="M15.5 15.5 21 21"></path>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <h1>Education For Empowerment</h1>
+        <p>Give every girl a fair chance at her education</p>
+        <a class="donate-button" href="contact-us.html">Donate</a>
+      </div>
+      <figure class="hero-image">
+        <img src="hero-girls.jpg" alt="Girls sitting together outside a classroom">
+      </figure>
+    </section>
+
+    <section class="mission">
+      <div class="mission-inner">
+        <h2>Our Mission Statement</h2>
+        <p>Envision a world in which every girl is given an equal right to education - regardless of her socioeconomic status, ethnicity, or where she lives. Give to Girls is a non-profit organization that aims to make this vision a reality. By providing young women with the proper resources and opportunities to build a better future, Give to Girls mobilizes educational support, supplies, and funds to help girls who are missing from classrooms across the globe. Join our movement for change.</p>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div class="contact-inner">
+        <div class="contact-text">
+          <h2>Contact us</h2>
+          <p>Reach out and let us know if there is anything we can do for you.</p>
+        </div>
+
+        <form class="contact-form" action="https://formspree.io/f/xvzlljde" method="post" aria-label="Contact us">
+          <input type="text" name="name" placeholder="Full name" aria-label="Full name">
+          <input type="email" name="email" placeholder="Email" aria-label="Email" required>
+          <textarea name="message" placeholder="Message" aria-label="Message"></textarea>
+          <input type="hidden" name="_subject" value="New Give To Girls contact form submission">
+          <p class="form-note">You may receive marketing and promotional materials. Contact the merchant for their privacy practices.</p>
+          <p class="recaptcha">This form is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>
+          <button class="submit-button" type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div class="footer-top">
+        <div class="footer-left">
+          <a href="index.html" class="footer-logo-link" aria-label="GiveToGirls logo">
+            <img class="footer-logo" src="gfg-footer-logo.png" alt="GiveToGirls logo">
+          </a>
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="index.html">Home</a>
+            <a href="follow-us.html">Follow us</a>
+            <a href="our-team.html">Our Team</a>
+            <a href="statistics.html">Statistics</a>
+            <a href="pilot-program.html">Pilot Program</a>
+            <a href="contact-us.html">Join Our Mission</a>
+            <a href="events.html">Events</a>
+          </nav>
+        </div>
+
+        <div class="social-links" aria-label="Social links">
+          <a href="mailto:givetogirlss@gmail.com" aria-label="Email">
+            <span>@</span>
+          </a>
+          <a class="instagram" href="https://www.instagram.com/give2girls" aria-label="Instagram">
+            <span>◎</span>
+          </a>
+          <a href="https://www.tiktok.com/@givetogirls" aria-label="TikTok">
+            <span>♪</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="newsletter">
+        <h2>Stay in the Loop</h2>
+        <form class="newsletter-form" action="https://formspree.io/f/xvzlljde" method="post">
+          <input type="email" name="email" placeholder="Email" aria-label="Email">
+          <input type="hidden" name="_subject" value="New Give To Girls newsletter signup">
+          <button type="submit">Sign Up</button>
+        </form>
+        <p class="recaptcha">This form is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.</p>
+      </div>
+
+      <p class="copyright">&copy; 2026</p>
+    </div>
+  </footer>  <script src="form-handler.js?v=forms"></script>
+
+</body>
+</html>
