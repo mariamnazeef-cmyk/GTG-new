@@ -324,6 +324,15 @@ img {
   max-width: 720px;
 }
 
+.section-kicker {
+  margin: 0 0 12px;
+  color: var(--header-pink);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
 .link-buttons {
   margin-top: 28px;
   display: flex;
@@ -358,6 +367,222 @@ img {
 .simple-grid h3 {
   margin: 0 0 8px;
   font-size: 17px;
+}
+
+.social-hero {
+  background:
+    linear-gradient(115deg, #fff8f7 0%, #f5eeee 52%, #e8f2ef 100%);
+  overflow: hidden;
+}
+
+.social-hero-inner,
+.team-hero-inner {
+  width: min(1080px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 72px 0;
+}
+
+.social-hero-copy .page-title,
+.team-copy .page-title {
+  max-width: 720px;
+  color: var(--mission-text);
+  font-size: clamp(2.5rem, 5vw, 4.6rem);
+  font-weight: 700;
+  line-height: 1.02;
+}
+
+.social-hero-copy .page-copy,
+.team-copy .page-copy {
+  max-width: 620px;
+  font-size: 19px;
+}
+
+.social-actions a {
+  border-color: var(--mission-text);
+  border-radius: 999px;
+  color: var(--mission-text);
+}
+
+.social-actions a:first-child {
+  background: var(--mission-text);
+  color: #fff;
+}
+
+.team-role-card span {
+  display: block;
+  color: #3d746b;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.signal-section,
+.team-roles-section {
+  background: #fff;
+}
+
+.signal-inner,
+.team-roles-inner,
+.share-strip-inner,
+.team-invite-inner {
+  width: min(1080px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 62px 0;
+}
+
+.signal-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.signal-heading h2 {
+  max-width: 520px;
+  margin: 0;
+  color: var(--mission-text);
+  font-size: clamp(2rem, 3.6vw, 3rem);
+  font-weight: 700;
+  line-height: 1.08;
+}
+
+.channel-grid,
+.team-role-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.channel-card,
+.team-role-card {
+  min-height: 292px;
+  padding: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #efd8d7;
+  border-radius: 8px;
+  background: #fff8f7;
+  box-shadow: 0 10px 26px rgba(107, 49, 40, 0.07);
+}
+
+.channel-mark {
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--mission-text);
+  color: #fff;
+  font-weight: 700;
+}
+
+.channel-card h3,
+.team-role-card h3 {
+  margin: 20px 0 8px;
+  color: var(--mission-text);
+  font-size: 22px;
+}
+
+.team-role-card p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.channel-card strong {
+  margin-top: 22px;
+  color: #3d746b;
+  font-size: 15px;
+}
+
+.instagram-channel {
+  background: #f8e4e8;
+}
+
+.tiktok-channel {
+  background: #f6d7df;
+}
+
+.share-strip,
+.team-invite {
+  background: var(--mission-text);
+  color: #fff;
+}
+
+.share-strip-inner,
+.team-invite-inner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 24px;
+}
+
+.share-strip h2,
+.team-invite h2 {
+  margin: 0;
+  font-size: clamp(1.8rem, 3.2vw, 2.7rem);
+  line-height: 1.1;
+}
+
+.share-strip p,
+.team-invite p {
+  max-width: 560px;
+  margin: 10px 0 0;
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.share-strip .donate-button,
+.team-invite .donate-button {
+  border-color: #fff;
+  background: #fff;
+  color: var(--mission-text);
+}
+
+.team-hero {
+  background: #f5eeee;
+  overflow: hidden;
+}
+
+.team-stats {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.team-stats div {
+  min-height: 92px;
+  padding: 16px;
+  border: 1px solid rgba(107, 49, 40, 0.14);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.52);
+}
+
+.team-stats strong,
+.team-stats span {
+  display: block;
+}
+
+.team-stats strong {
+  color: var(--mission-text);
+  font-size: 19px;
+}
+
+.team-stats span {
+  margin-top: 4px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.team-role-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.team-role-card {
+  min-height: 250px;
 }
 
 .simple-grid p,
@@ -864,7 +1089,13 @@ img {
   .simple-grid,
   .stat-grid,
   .pilot-card-grid,
-  .pilot-path {
+  .pilot-path,
+  .social-hero-inner,
+  .team-hero-inner,
+  .channel-grid,
+  .team-role-grid,
+  .share-strip-inner,
+  .team-invite-inner {
     grid-template-columns: 1fr;
   }
 
@@ -880,6 +1111,11 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .share-strip-inner,
+  .team-invite-inner {
+    align-items: start;
+  }
+
 }
 
 @media (max-width: 600px) {
@@ -887,7 +1123,13 @@ img {
   .hero,
   .mission-inner,
   .contact-inner,
-  .footer-main {
+  .footer-main,
+  .social-hero-inner,
+  .signal-inner,
+  .team-hero-inner,
+  .team-roles-inner,
+  .share-strip-inner,
+  .team-invite-inner {
     width: min(100% - 32px, 1000px);
   }
 
@@ -937,6 +1179,38 @@ img {
 
   .stat-list li {
     min-height: 150px;
+  }
+
+  .social-hero-inner,
+  .team-hero-inner,
+  .signal-inner,
+  .team-roles-inner,
+  .share-strip-inner,
+  .team-invite-inner {
+    padding: 44px 0;
+  }
+
+  .social-hero-copy .page-title,
+  .team-copy .page-title {
+    font-size: 38px;
+  }
+
+  .social-hero-copy .page-copy,
+  .team-copy .page-copy {
+    font-size: 16px;
+  }
+
+  .signal-heading {
+    display: block;
+  }
+
+  .channel-card,
+  .team-role-card {
+    min-height: 0;
+  }
+
+  .team-stats {
+    grid-template-columns: 1fr;
   }
 
   .footer-top {
