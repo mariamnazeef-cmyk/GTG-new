@@ -1295,6 +1295,7 @@ img {
 
   .stats-only-grid {
     grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
 
   .stats-board-main,
@@ -1304,6 +1305,49 @@ img {
   .wide-small-stat {
     grid-column: auto;
     grid-row: auto;
+  }
+
+  .stats-dashboard-inner {
+    padding: 34px 0;
+  }
+
+  .stats-spotlight,
+  .stats-board-main,
+  .stat-feature-card {
+    min-height: 168px;
+    padding: 18px;
+    border-radius: 8px;
+  }
+
+  .stats-spotlight strong {
+    font-size: clamp(2.5rem, 9vw, 4rem);
+  }
+
+  .stats-board-main strong {
+    font-size: clamp(3rem, 12vw, 5rem);
+  }
+
+  .stat-feature-card strong {
+    font-size: clamp(2rem, 7vw, 3.3rem);
+  }
+
+  .stats-spotlight p,
+  .stats-board-main p,
+  .stat-feature-card p {
+    max-width: 100%;
+    margin-top: 14px;
+    font-size: 13px;
+    line-height: 1.28;
+  }
+
+  .stats-board-main p {
+    font-size: 15px;
+  }
+
+  .stat-tag,
+  .stats-spotlight span {
+    font-size: 10px;
+    letter-spacing: 0.12em;
   }
 
 }
@@ -1405,9 +1449,67 @@ img {
     min-height: 0;
   }
 
+  .stats-only-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .stats-board-main,
+  .stats-spotlight,
+  .compact-stat,
+  .tall-stat,
+  .wide-small-stat {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
   .stats-spotlight {
-    min-height: 240px;
-    padding: 26px;
+    min-height: 146px;
+    padding: 16px;
+  }
+
+  .stats-spotlight strong {
+    font-size: clamp(2.25rem, 12vw, 3.6rem);
+  }
+
+  .stats-spotlight p {
+    font-size: 13px;
+  }
+
+  .stats-board-main,
+  .stat-feature-card {
+    padding: 16px;
+  }
+
+  .stats-board-main {
+    min-height: 146px;
+  }
+
+  .stat-feature-card {
+    min-height: 126px;
+  }
+
+  .stats-board-main strong {
+    font-size: clamp(2.8rem, 14vw, 4.4rem);
+  }
+
+  .stat-feature-card strong {
+    font-size: clamp(1.9rem, 9vw, 3rem);
+  }
+
+  .stats-board-main p {
+    font-size: 13px;
+  }
+
+  .stat-feature-card p {
+    max-width: 100%;
+    margin-top: 12px;
+    font-size: 12px;
+  }
+
+  .stat-tag {
+    font-size: 9px;
+    letter-spacing: 0.09em;
   }
 
   .team-stats {
@@ -1447,5 +1549,17 @@ img {
 
   .join-form input {
     height: 56px;
+  }
+}
+
+@media (max-width: 420px) {
+  .stats-only-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-spotlight,
+  .stats-board-main,
+  .stat-feature-card {
+    min-height: 0;
   }
 }
