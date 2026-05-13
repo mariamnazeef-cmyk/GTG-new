@@ -412,6 +412,7 @@ img {
 }
 
 .pilot-section {
+  min-height: 620px;
   color: var(--mission-text);
 }
 
@@ -419,26 +420,110 @@ img {
   text-align: center;
 }
 
+.pilot-hero {
+  width: min(820px, 100%);
+  margin: 0 auto;
+}
+
+.pilot-kicker {
+  margin: 0 0 12px;
+  color: var(--header-pink);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
 .pilot-lede {
   max-width: 760px;
   margin: 0 auto;
   font-size: 20px;
+  line-height: 1.5;
 }
 
 .pilot-lede strong {
   color: var(--mission-text);
   font-weight: 700;
 }
-.pilot-section .simple-grid {
-  max-width: 920px;
-  margin-left: auto;
-  margin-right: auto;
+
+.pilot-card-grid {
+  margin: 42px auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
   color: var(--text);
+}
+
+.pilot-card {
+  min-height: 260px;
+  padding: 26px 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #efd8d7;
+  border-radius: 18px;
+  background: #fff8f7;
+  box-shadow: 0 14px 32px rgba(107, 49, 40, 0.08);
   text-align: center;
 }
 
-.pilot-section .simple-grid > div {
-  text-align: center;
+.pilot-number {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 18px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #f8e4e8;
+  color: var(--mission-text);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.pilot-card h3 {
+  margin: 0 0 10px;
+  color: var(--mission-text);
+  font-size: 20px;
+}
+
+.pilot-card p {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.pilot-path {
+  width: min(820px, 100%);
+  margin: 34px auto 0;
+  padding: 18px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  border-radius: 999px;
+  background: #ffffff;
+  color: var(--mission-text);
+}
+
+.pilot-path div {
+  padding: 12px 14px;
+  border-radius: 999px;
+  background: #f8e4e8;
+}
+
+.pilot-path strong,
+.pilot-path span {
+  display: block;
+}
+
+.pilot-path strong {
+  font-size: 17px;
+}
+
+.pilot-path span {
+  margin-top: 3px;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .contact-section {
@@ -777,8 +862,18 @@ img {
   }
 
   .simple-grid,
-  .stat-grid {
+  .stat-grid,
+  .pilot-card-grid,
+  .pilot-path {
     grid-template-columns: 1fr;
+  }
+
+  .pilot-path {
+    border-radius: 18px;
+  }
+
+  .pilot-path div {
+    border-radius: 14px;
   }
 
   .stat-list {
