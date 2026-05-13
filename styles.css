@@ -164,53 +164,96 @@ img {
 }
 
 .hero {
-  width: min(999px, calc(100% - 48px));
-  min-height: 528px;
+  position: relative;
+  width: min(960px, calc(100% - 48px));
+  min-height: auto;
   margin: 0 auto;
-  padding: 48px 0;
+  padding: 58px 0 34px;
   display: grid;
-  grid-template-columns: 405px 578px;
+  grid-template-columns: 1fr;
   align-items: center;
-  gap: 16px;
-}
-
-.hero-copy {
+  justify-items: center;
+  gap: 30px;
   text-align: center;
 }
 
+.hero-copy {
+  display: flex;
+  width: min(760px, 100%);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero .hero-kicker {
+  margin: 0 0 12px;
+  color: var(--header-pink);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
 .hero-image {
+  width: min(760px, 100%);
   margin: 0;
+  padding: 12px;
+  border: 1px solid #efd8d7;
+  border-radius: 28px;
+  background: #fff8f7;
+  box-shadow: 0 18px 42px rgba(107, 49, 40, 0.12);
 }
 
 .hero h1 {
-  margin: 0 0 12px;
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 1.25;
-  white-space: nowrap;
+  max-width: 760px;
+  margin: 0 0 14px;
+  color: var(--mission-text);
+  font-size: clamp(2.8rem, 6.2vw, 5.4rem);
+  font-weight: 700;
+  line-height: 1.02;
 }
 
 .hero p {
+  max-width: 340px;
   margin: 0 0 30px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
-.donate-button {
-  min-width: 106px;
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.donate-button,
+.learn-button {
+  min-width: 132px;
   min-height: 48px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 12px 22px;
-  border: 2px solid #000;
-  border-radius: 8px;
-  background: #fff;
+  border: 2px solid var(--mission-text);
+  border-radius: 999px;
   font-weight: 700;
 }
 
+.donate-button {
+  background: var(--mission-text);
+  color: #fff;
+}
+
+.learn-button {
+  background: #fff;
+  color: var(--mission-text);
+}
+
 .hero-image img {
-  width: 578px;
+  width: 100%;
   aspect-ratio: 4 / 3;
+  border-radius: 16px;
   object-fit: cover;
 }
 
@@ -711,17 +754,17 @@ img {
   .hero {
     min-height: auto;
     grid-template-columns: 1fr;
-    gap: 34px;
-    padding: 42px 0 48px;
+    gap: 28px;
+    padding: 42px 0 34px;
+  }
+
+  .hero-copy {
+    min-height: auto;
   }
 
   .hero-image {
     order: -1;
     margin: 0;
-  }
-
-  .hero-image img {
-    width: 100%;
   }
 
   .contact-inner {
@@ -769,8 +812,20 @@ img {
   }
 
   .hero h1 {
-    font-size: 28px;
-    white-space: normal;
+    font-size: 42px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero-actions {
+    width: 100%;
+  }
+
+  .donate-button,
+  .learn-button {
+    width: 100%;
   }
 
   .mission h2 {
