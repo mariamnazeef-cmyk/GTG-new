@@ -520,6 +520,11 @@ img {
   gap: 24px;
 }
 
+.team-invite-inner {
+  display: block;
+  padding: 34px 0;
+}
+
 .share-strip h2,
 .team-invite h2 {
   margin: 0;
@@ -539,6 +544,13 @@ img {
   border-color: #fff;
   background: #fff;
   color: var(--mission-text);
+}
+
+.team-invite .donate-button {
+  width: 100%;
+  min-height: 96px;
+  font-size: clamp(1.5rem, 4vw, 2.6rem);
+  border-radius: 8px;
 }
 
 .team-hero {
